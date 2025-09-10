@@ -39,6 +39,15 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
+        "civic-orange": {
+          DEFAULT: "hsl(var(--civic-orange))",
+          foreground: "hsl(var(--civic-orange-foreground))",
+        },
+        status: {
+          reported: "hsl(var(--status-reported))",
+          progress: "hsl(var(--status-progress))",
+          resolved: "hsl(var(--status-resolved))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
