@@ -1,73 +1,105 @@
-# Welcome to your Lovable project
+FixMyCity
 
-## Project info
+Report. Resolve. Rebuild.
 
-**URL**: https://lovable.dev/projects/fddad5ad-e030-40d5-9460-3630acde2942
+FixMyCity is a civic reporting web application that empowers citizens to report problems in their city—such as potholes, garbage, broken streetlights, or water issues—and track their resolution. The platform bridges the gap between citizens, local authorities, and the community.
 
-## How can I edit this code?
+🚀 Features
 
-There are several ways of editing your application.
+Onboarding & Authentication:
 
-**Use Lovable**
+Sign up/login via OTP or social login
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/fddad5ad-e030-40d5-9460-3630acde2942) and start prompting.
+Intro screens explaining the app
 
-Changes made via Lovable will be committed automatically to this repo.
+Home Dashboard:
 
-**Use your preferred IDE**
+“Report Issue” button
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Search bar to check status by Ticket ID
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Quick category shortcuts (Potholes, Garbage, Streetlights, Toilets, Water)
 
-Follow these steps:
+Map view with nearby issues
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Report an Issue:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Select category
 
-# Step 3: Install the necessary dependencies.
-npm i
+Upload photo/video
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Auto-capture GPS with editable pin
 
-**Edit a file directly in GitHub**
+Add description → generate unique Ticket ID
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Issue Tracking:
 
-**Use GitHub Codespaces**
+Status flow: Reported → In Progress → Resolved
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Notifications for updates
 
-## What technologies are used for this project?
+Upvote & share issues
 
-This project is built with:
+Authorities Dashboard:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Staff login
 
-## How can I deploy this project?
+Map/List view of reported issues
 
-Simply open [Lovable](https://lovable.dev/projects/fddad5ad-e030-40d5-9460-3630acde2942) and click on Share -> Publish.
+Assign tasks & update status
 
-## Can I connect a custom domain to my Lovable project?
+Upload proof after resolution
 
-Yes, you can!
+Community Features:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Upvote & comment on issues
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Leaderboard of top reporters (“Civic Heroes”)
+
+Badges for active users
+
+Support & Help:
+
+FAQs, helpline numbers, in-app chat support
+
+Phase 2 (Future):
+
+AI-powered issue detection
+
+WhatsApp bot reporting
+
+IVR reporting system
+
+🛠️ Tech Stack
+
+Frontend: React, Tailwind CSS / Material UI
+
+Backend: Node.js + Express
+
+Database: Firebase Firestore / MongoDB
+
+Authentication: Firebase Auth (OTP + Social login)
+
+Storage: Firebase Storage (media uploads)
+
+Maps: Google Maps API
+
+📱 App Screens
+
+Splash & Onboarding
+
+Login/Signup
+
+Home Dashboard
+
+Report Issue Flow
+
+My Issues (Issue Tracking)
+
+Authorities Dashboard
+
+Community Feed
+
+Support & Help
+
+Profile & Settings
