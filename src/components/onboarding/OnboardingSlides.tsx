@@ -45,20 +45,20 @@ const OnboardingSlides = ({ onComplete }: OnboardingSlidesProps) => {
   };
 
   return (
-    <div className="min-h-screen bg-background flex flex-col p-6">
-      <div className="flex-1 flex flex-col items-center justify-center text-center space-y-8">
-        <div className={`w-32 h-32 rounded-full bg-muted flex items-center justify-center ${slides[currentSlide].color}`}>
+    <div className="min-h-screen bg-background flex flex-col p-4">
+      <div className="flex-1 flex flex-col items-center justify-center text-center space-y-6 max-w-sm mx-auto">
+        <div className={`w-20 h-20 rounded-full bg-muted flex items-center justify-center ${slides[currentSlide].color}`}>
           {(() => {
             const IconComponent = slides[currentSlide].icon;
-            return <IconComponent size={64} />;
+            return <IconComponent size={40} />;
           })()}
         </div>
 
-        <div className="space-y-4 max-w-sm">
-          <h2 className="text-3xl font-bold text-foreground">
+        <div className="space-y-3">
+          <h2 className="text-2xl font-bold text-foreground">
             {slides[currentSlide].title}
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-base leading-relaxed">
             {slides[currentSlide].description}
           </p>
         </div>
@@ -68,7 +68,7 @@ const OnboardingSlides = ({ onComplete }: OnboardingSlidesProps) => {
           {slides.map((_, index) => (
             <div
               key={index}
-              className={`w-3 h-3 rounded-full transition-colors ${
+              className={`w-2 h-2 rounded-full transition-colors ${
                 index === currentSlide ? "bg-primary" : "bg-muted"
               }`}
             />
@@ -76,7 +76,7 @@ const OnboardingSlides = ({ onComplete }: OnboardingSlidesProps) => {
         </div>
       </div>
 
-      <div className="flex justify-between items-center mt-8">
+      <div className="flex justify-between items-center mt-6 px-2">
         <Button
           variant="ghost"
           onClick={prevSlide}
