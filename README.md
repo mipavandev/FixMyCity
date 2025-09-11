@@ -2,7 +2,9 @@ FixMyCity
 
 Report. Resolve. Rebuild.
 
-FixMyCity is a civic reporting web application that empowers citizens to report problems in their city—such as potholes, garbage, broken streetlights, or water issues—and track their resolution. The platform bridges the gap between citizens, local authorities, and the community.
+Live Demo: https://drive.google.com/drive/folders/183zBjl6XxOQwKMdEEKcqFEdgWWHCWyoe?usp=sharing
+
+FixMyCity is a civic reporting web application that empowers citizens to report problems in their city, such as potholes, garbage, broken streetlights, or water issues and track their resolution. The platform bridges the gap between citizens, local authorities, and the community.
 
 Features
 
