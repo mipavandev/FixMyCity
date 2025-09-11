@@ -18,15 +18,27 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
 
   return (
     <div className="min-h-screen bg-primary flex flex-col items-center justify-center text-primary-foreground p-6">
-      <div className="text-center space-y-6">
-        <div className="w-24 h-24 mx-auto bg-primary-foreground rounded-full flex items-center justify-center mb-8">
-          <div className="text-primary text-4xl font-bold">FC</div>
+      <div className="text-center space-y-8">
+        {/* Modern Logo */}
+        <div className="space-y-4">
+          <div className="w-28 h-28 bg-gradient-to-br from-primary-foreground to-civic-secondary rounded-3xl mx-auto flex items-center justify-center shadow-xl transform rotate-3 hover:rotate-0 transition-transform duration-300">
+            <div className="bg-white w-20 h-20 rounded-2xl flex items-center justify-center transform -rotate-3 shadow-lg">
+              <div className="text-center">
+                <div className="text-2xl font-black text-primary tracking-tighter">FMC</div>
+                <div className="text-[8px] text-civic-secondary font-bold tracking-wider">CITY</div>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <h1 className="text-4xl font-bold bg-gradient-to-r from-primary-foreground via-white to-civic-secondary bg-clip-text text-transparent mb-2 tracking-tight">
+              FixMyCity
+            </h1>
+            <p className="text-xl text-primary-foreground/90 font-medium tracking-wide">
+              Report. Resolve. Rebuild.
+            </p>
+          </div>
         </div>
-        
-        <h1 className="text-4xl font-bold mb-2">FixMyCity</h1>
-        <p className="text-xl text-primary-foreground/90 mb-8">
-          Report. Resolve. Rebuild.
-        </p>
 
         {showContent && (
           <div className="space-y-4 animate-fade-in">

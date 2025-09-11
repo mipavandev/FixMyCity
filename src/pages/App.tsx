@@ -5,6 +5,10 @@ import OnboardingSlides from "@/components/onboarding/OnboardingSlides";
 import BottomNavigation from "@/components/layout/BottomNavigation";
 import Home from "@/pages/Home";
 import Report from "@/pages/Report";
+import MyIssues from "@/pages/MyIssues";
+import Community from "@/pages/Community";
+import Profile from "@/pages/Profile";
+import Map from "@/pages/Map";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -35,9 +39,10 @@ const AppContent = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/report" element={<Report />} />
-        <Route path="/my-issues" element={<div className="p-6 pb-20">My Issues - Coming Soon</div>} />
-        <Route path="/community" element={<div className="p-6 pb-20">Community - Coming Soon</div>} />
-        <Route path="/profile" element={<div className="p-6 pb-20">Profile - Coming Soon</div>} />
+        <Route path="/my-issues" element={<MyIssues />} />
+        <Route path="/community" element={<Community />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/map" element={<Map />} />
       </Routes>
       <BottomNavigation />
     </div>

@@ -126,10 +126,12 @@ const Home = () => {
         </div>
 
         {/* Map View Button */}
-        <Button variant="outline" className="w-full">
-          <MapPin size={20} className="mr-2" />
-          View Issues on Map
-        </Button>
+        <Link to="/map">
+          <Button size="lg" variant="outline" className="w-full">
+            <MapPin size={20} className="mr-2" />
+            View City Map
+          </Button>
+        </Link>
       </div>
     </div>
   );
